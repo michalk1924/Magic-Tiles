@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/levels.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logoFavicon.ico" type="image/x-icon">
+    <title>שלבים</title>
+</head>
+
+<body dir="rtl">
+
+    <a href="../html/home.html"><img src="../images/Logo.png" alt="לוגו" id="logo"></a>
+    <div id="user">
+        <h2 id="userCurrentScoreName"></h2>
+        <h2 id="userCurrentScore"></h2><br>
+        <h2>ניקוד השיא שלך:</h2>
+        <h2 id="userBestScore"></h2><br>
+        <h2>הניקוד הגבוה מבין המשתתפים:</h2>
+        <h2 id="bestScoreAtGame"></h2>
+    </div>
+    <div id="peak">
+        <i class="fa-regular fa-circle-xmark" id="exitPeak"></i>
+        <h1 id="peakH1"></h1>
+        <p id="peakP"></p>
+    </div>
+    <main>
+        <nav>
+            <i class="fa-solid fa-user icon" id="userPeakOpen"></i>
+            <i class="fa-solid fa-volume-high music icon"></i>
+            <h1 id="headding">שלבים</h1>
+        </nav>
+
+        <div class="level" id="level1">
+            <img class="numbers" src="../images/oneGold.png">
+            <h2>שלב ראשון</h2>
+            <p>passacaglia</p>
+            <a id="play1" href="../html/game.html"><button class="play">שחק</button></a>
+        </div>
+        <div class="level" id="level2">
+            <img id="img2" class="numbers" src="../images/twoGrey.png">
+            <h2>שלב שני</h2>
+            <p>Red Berries in Blossom</p>
+            <a id="play2" href="../html/game.html"><button class="play">שחק</button></a>
+            <img id="lock2" class="lock" src="../images/מנעול1.png">
+        </div>
+        <div class="level" id="level3">
+            <img id="img3" class="numbers" src="../images/threeGrey.png">
+            <h2>שלב שלישי</h2>
+            <p>Marche Militaire</p>
+            <a id="play3" href="../html/game.html"><button class="play">שחק</button></a>
+            <img id="lock3" class="lock" src="../images/מנעול1.png">
+        </div>
+    </main>
+    <script src="../js/levels.js"></script>
+</body>
+
+</html>

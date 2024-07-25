@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Varela+Round&display=swap');
+
+body {
+    /*background-color: rgba(4, 7, 79,0.85);*/
+    background-image: url("../images/1.jpg");
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    height: 96vh;
+    width: 35vw;
+    margin: auto;
+    margin-top: 2vh;
+    box-sizing: content-box;
+    background-color: #f744ff;
+    border: black 0.3em;
+
+}
+
+#logo {
+    height: 5em;
+    right: 1em;
+    top: 1em;
+    position: absolute;
+}
+#logo:hover {
+    opacity: 0.5;
+}
+
+.mainColumns {
+    height: 100%;
+    background-color: rgba(197, 128, 128, 0);
+    width: 25%;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.02em;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.divTav {
+    top: -20vh;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    /*background-color: rgba(4, 7, 79,0.85);*/
+    background-color: #124b76;
+}
+
+/*fail*/
+#fail {
+    display: none;
+    /* position: absolute;
+    background-color: rgba(250, 235, 215, 0.5);
+    height: 96vh;
+    width: 35vw; */
+    /* text-align: center; */
+    position: relative;
+    /* display: flex; */
+    height: 96vh;
+    width: 35vw;
+    margin: auto;
+    margin-top: 2vh;
+    box-sizing: content-box;
+    background-image: url("../images/failDivBackground.gif");
+    border: black 0.3em;
+}
+#gameOverShockFace{
+    position: absolute;
+    width: 7vw;
+    top:20vh;
+    right: 5vw;
+}
+#gameOver,
+#winLevel {
+    height: 50%;
+    width: 70%;
+    top: 15%;
+    left: 15%;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    line-height: 8vh;
+    font-size: 2vw;
+    box-sizing: border-box;
+}
+
+.fa-arrow-rotate-right {
+    position: absolute;
+    width: 4.5vw;
+    top: 48vh;
+    left: 10vw;
+    color: white;
+    background-color: #9b28a7;
+    border: solid #9b28a7 0.1em;
+    border-radius: 300px;
+    text-shadow: #9b28a7;
+    text-align: center;
+    box-shadow: 1px 1px 30px #9b28a7;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.fa-arrow-rotate-right:hover {
+    background-color: #62196b;
+    border-color: #62196b;
+
+}
+
+#crowns {
+    position: absolute;
+    top: 2vh;
+    text-align: center;
+    z-index: 2;
+    width: 35vw;
+}
+
+.fa-crown {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#winDiv {
+    display: none;
+    position: relative;
+    height: 96vh;
+    width: 35vw;
+    margin: auto;
+    margin-top: 2vh;
+    box-sizing: content-box;
+    /* background-color: beige; */
+    background-image: url("../images/failDivBackground.gif");
+    background-repeat: repeat;
+    border: black 0.3em;
+}
+#medal{
+    position:absolute;
+    top:8vh;
+    left: 7.5vw;
+    width: 20vw;
+
+}
+#winLevel button {
+    font-family: 'Varela Round', sans-serif;
+    width: 50%;
+    height: 12%;
+    font-size: 2vh;
+    font-weight: bold;
+    background-color: "beige";
+    border: solid black 0.2em;
+    border-radius: 20px;
+    text-shadow: black;
+    box-shadow: 1px 1px 30px #9b28a7;
+    background-color: #62196b;
+    border-color: #62196b;
+    color: white;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#winLevel button:hover {
+    background-color: #9b28a7;
+    border: solid #9b28a7 0.1em;
+    color: black;
+}
+
+.crownsAll {
+    color: yellow;
+}
+
+#crownsWin {
+    font-size: 0.5em;
+    margin: 10%;
+    text-align: center;
+}
+
+.icon {
+    position: absolute;
+    margin: 1em;
+    top: 0;
+    font-size: 2em;
+    color: black;
+}
+
+.icon:hover {
+    opacity: 0.5;
+}
+
+.fa-angles-right {
+    right: 0;
+}
+
+#startButton {
+    position: absolute;
+    z-index: 5;
+    width: 5vw;
+    bottom: 4vh;
+    right: 2vw;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+animation-delay: 1s;
+}
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
+}
+#startButton:hover{
+opacity: 0.5;
+}

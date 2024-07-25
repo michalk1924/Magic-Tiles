@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link href="../css/home.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logoFavicon.ico" type="image/x-icon">
+    <title>דף הבית</title>
+</head>
+
+<body dir="rtl">
+    <nav>
+        <img src="../images/Logo.png" alt="לוגו" id="logo">
+        <h2 id="hello"></h2>
+        <button id="passToLog"></button>
+    </nav>
+    <main>
+        <div id="ourGame" class="games">
+            <h3 class="gameName">אריחי מוזיקה</h3>
+        </div>
+        <div class="games" id="game2">
+            <h3 class="gameName">כדור צבע</h3>
+        </div><br>
+        <div class="games" id="game3">
+            <h3 class="gameName">אריחי הופ</h3>
+        </div>
+        <div class="games" id="game4">
+            <h3 class="gameName">באונסז</h3>
+        </div>
+    </main>
+    <div id="log">
+        <div class="tag" id="logUpTag">
+            <h1>הרשמה</h1>
+        </div>
+        <div class="tag" id="logInTag">
+            <h1>כניסה</h1>
+        </div>
+        <div id="logUp" class="log">
+            <form id="logUpForm" action="" autocomplete="on" method="POST">
+                <div class="inputDiv">
+                    <i class="fa-solid fa-user"></i>
+                    <input id="name" type="text" placeholder="שם" required>
+                </div>
+                <div class="inputDiv">
+                    <i class="fa-solid fa-at"></i>
+                    <input id="mailUp" type="email" placeholder="מייל" required>
+                </div>
+
+                <div class="inputDiv">
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="passwordUp" type="password" placeholder="סיסמה" required>
+                </div>
+                <h5 id="wrongInputInLogUp">מצטערים. כתובת מייל זו כבר נמצאת בשימוש. אנא נסה כתובת מייל אחרת.</h5>
+                <button class="sumbit" id="sumbitUp" type="submit">צור חשבון</button>
+            </form>
+        </div>
+        <div id="logIn" class="log">
+            <form id="logInForm" action="" autocomplete="on" method="POST">
+                <div class="inputDiv">
+                    <i class="fa-solid fa-at"></i>
+                    <input id="mailIn" type="email" placeholder="מייל" required>
+                </div>
+
+                <div class="inputDiv">
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="passwordIn" type="password" placeholder="סיסמה" required>
+                </div>
+                <h5 id="wrongInputInLogIn">מצטערים. כתובת המייל או הסיסמה שגויים</h5>
+                <button class="sumbit" id="sumbitIn" type="submit">כניסה</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Varela+Round&display=swap');
+
+body {
+    background-image: url("../images/1.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main {
+
+    width: fit-content;
+    margin: 3vh auto;
+    height: 80vh;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: hsla(180, 100%, 97%, 0);
+    box-shadow: 3px 3px 30px;
+}
+
+#logo {
+    padding: 1vh 0;
+    margin-right: 1em;
+    height: 8vh;
+    display: inline-block;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}
+
+nav button {
+    font-family: 'Varela Round', sans-serif;
+    display: inline-block;
+    position: absolute;
+    left: 3vw;
+    top: 2vh;
+    height: 6vh;
+    padding: 0 2vw;
+    font-size: 1em;
+    font-weight: 600;
+    border: solid 1px white;
+    color: #d739d8;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px white;
+}
+
+@keyframes borderGames {
+    from {
+        border-color: #cd36cf;
+    }
+
+    to {
+        border-color: #3cacba;
+    }
+}
+
+
+.games {
+    display: inline-block;
+    margin: 2em;
+    position: relative;
+    height: 12em;
+    width: 12em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 0.6em #cd36cf;
+    border-radius: 10px;
+    animation-name: borderGames;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#ourGame {
+    height: 12em;
+    width: 12em;
+    background-image: url("../images/Piano-Star-Tap-Music-Tiles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game2 {
+    background-image: url("../images/Dancing-Road-Color-Ball-Run.webp");
+}
+
+#game3 {
+    background-image: url("../images/Tiles-Hop-Edm-Rush.jpg");
+}
+
+#game4 {
+    background-image: url("../images/Bouncez.jpg");
+}
+
+.gameName {
+    font-family: 'Varela Round', sans-serif;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(94, 195, 255, 0);
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    color: rgba(0, 0, 0, 0);
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    z-index: 4;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 40%;
+}
+
+.gameName:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(94, 195, 255, 0.5);
+}
+
+.log {
+    height: 86vh;
+    width: 100%;
+    background-color: rgba(215, 57, 216, 0.5);
+    text-align: center;
+    padding-top: 10vh;
+    box-sizing: border-box;
+}
+
+#log {
+    box-shadow: 1px 1px 50px rgb(63, 63, 63);
+    display: none;
+    padding: 0;
+    position: relative;
+    height: fit-content;
+    width: 35vw;
+    margin: 4vh auto;
+    background-color: hsla(297, 100%, 63%, 0);
+    border: black 0.3em;
+}
+
+.tag {
+    display: inline-block;
+    margin: 0;
+    height: 8vh;
+    width: 49%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tag:hover {
+    color: white;
+}
+
+#logUpTag {
+    background-color: rgba(215, 57, 216, 0.5);
+
+}
+
+#logInTag {
+    margin-right: 1%;
+    background-color: rgba(215, 57, 216, 0);
+}
+
+.tag:hover {
+    background-color: #929ea2;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    top: 25%;
+    padding: 0;
+}
+
+input {
+    display: block;
+    margin: 5vh auto;
+    border: none;
+    outline: none;
+    appearance: none;
+
+}
+
+.inputDiv {
+    height: fit-content;
+    width: fit-content;
+    border: solid 0px black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 1em;
+    margin: 1.5em auto;
+    box-shadow: 1px 1px 30px grey;
+}
+
+.inputDiv:hover {
+    box-shadow: 1px 1px 30px black;
+}
+
+.inputDiv i {
+    color: #d739d8;
+
+}
+
+h5 {
+    display: none;
+}
+
+#logIn {
+    display: none;
+    height: 70vh;
+}
+
+#logUp {
+    display: block;
+    height: 70vh;
+}
+
+input {
+    padding: 0;
+    border: solid 0px black;
+    display: inline-block;
+    margin: 0;
+}
+
+.sumbit {
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 4vh;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-weight: 600;
+    border: solid 1px white;
+    color: #d739d8;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px white;
+}
+
+button:hover {
+    background-color: #d739d8;
+    border: solid 1px #d739d8;
+    color: white;
+}
+
+@keyframes jumpLetters {
+    from {
+        font-size: 1em;
+    }
+
+    to {
+        font-size: 1.8em;
+    }
+}
+
+#hello {
+
+    display: inline-block;
+    position: absolute;
+    top: 3vh;
+    right: 30vw;
+    width: 40vw;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+    color: black;
+    animation-name: jumpLetters;
+    animation-duration: 1.5s;
+
+}
+@media (max-width:1000px){
+    #hello{
+        width: fit-content;
+    }
+}
+@media (max-width:900px){
+    #hello{
+        width: fit-content;
+        font-size: 1.4em;
+    }
+}
+@media (max-width:700px){
+    #hello{
+        width: 40vw;
+        font-size: 1em;
+    }
+}
